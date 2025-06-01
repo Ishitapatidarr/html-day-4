@@ -1,28 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <title>Curriculum Vitae</title>
     <style>
-      .box {
-        border: 1px solid #000;
-        padding: 10px;
-        width: fit-content;
+      body {
         font-family: Arial, sans-serif;
+        background-color: white;
+        padding: 40px;
+        color: black;
+      }
+
+      h1 {
+        text-align: center;
+        color: red;
+        text-transform: uppercase;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .photo {
+        width: 150px;
+        height: 180px;
+        border: 2px solid black;
+        object-fit: cover;
+      }
+
+      hr {
+        border: 1px solid black;
+        margin: 20px 0;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        margin-bottom: 5px;
+        color: #003366;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      p,
+      li {
+        margin: 5px 0;
       }
     </style>
   </head>
   <body>
-    <div class="box">
-      <p>Lists can be nested (list inside list):</p>
+    <h1>Curriculum Vitae</h1>
+    <hr />
+
+    <div class="header">
+      <div>
+        <p><strong>Infomax Academy</strong></p>
+        <p>
+          <strong>Address:</strong> G.R Complex Preetam Nagar, Dhoomanganj,
+          Prayagraj, UP - 211011
+        </p>
+        <p><strong>Mobile:</strong> +91 8874588766</p>
+        <p><strong>Email:</strong> info@infomaxacademy.com</p>
+      </div>
+      <div>
+        <img src="photo.png" alt="Profile Photo" class="photo" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Career Objective</h3>
+      <p>
+        To perceive a career in a renowned firm with dedicated efforts and to
+        associate myself with an organization that gives me a chance to update
+        my knowledge.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>Educational Qualification</h3>
       <ul>
-        <li>Coffee</li>
         <li>
-          Tea
-          <ul>
-            <li>Black tea</li>
-            <li>Green tea</li>
-          </ul>
+          Graduation B.Com (Computer Science) - Omnisia University, Sandeepani
+          Degree College, Kamareddy (2009)
         </li>
-        <li>Milk</li>
+        <li>Intermediate C.E.C - Sandeepani Jr. College, Kamareddy (2006)</li>
+        <li>S.S.C - Triveni High School, Domakonda (2004)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Computer Skills</h3>
+      <ul>
+        <li>P.G.D.C.A (Post Graduate Diploma in Computer Application)</li>
+        <li>A.D.C.A (Advanced Diploma in Computer Application)</li>
+        <li>D.T.P (Desktop Publisher)</li>
+        <li>Operating Systems: XP, 2000, 98, and others</li>
       </ul>
     </div>
   </body>
