@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Table 1: Regular table */
+      .table1 {
+        width: 60%;
+        border-collapse: collapse;
+        background-color: #a7d8db;
+      }
+
+      .table1 th,
+      .table1 td {
+        border: 1px solid #888;
+        padding: 8px;
+        text-align: left;
+      }
+
+      /* Table 2: Rounded borders */
+      .table2 {
+        width: 60%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background-color: #a7d8db;
+      }
+
+      .table2 th,
+      .table2 td {
+        border: 1px solid #888;
+        padding: 8px;
+        text-align: left;
+      }
+
+      .table2 th:first-child {
+        border-top-left-radius: 10px;
+      }
+
+      .table2 th:last-child {
+        border-top-right-radius: 10px;
+      }
+
+      .table2 td:first-child {
+        border-bottom-left-radius: 10px;
+      }
+
+      .table2 td:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Table 1: Normal</h3>
+    <table class="table1">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <h3>Table 2: Rounded Borders</h3>
+    <table class="table2">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+  </body>
+</html>
